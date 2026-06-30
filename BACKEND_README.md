@@ -21,7 +21,7 @@ On **subsequent boots** step 1 runs (no-op) and step 2 is skipped automatically.
 | `http://localhost:8090/api/docs/` | Swagger UI |
 | `http://localhost:8090/admin/` | Django admin |
 
-> **Port conflict?**  If another service already uses port 8081, change the host
+> **Port conflict?**  If another service already uses port 8090, change the host
 > port in `docker-compose.yml`: `ports: - "8082:8000"` and access the API on 8082.
 
 ---

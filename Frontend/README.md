@@ -12,7 +12,7 @@ npm run build   # production build
 
 Set the backend URL in `.env`:
 ```
-VITE_API_BASE_URL=http://localhost:8081/api/v1
+VITE_API_BASE_URL=http://localhost:8090/api/v1
 ```
 
 ## Architecture Decisions
@@ -69,7 +69,7 @@ Every query key encodes all dimensions that affect the response:
 
 ### Assumptions
 
-- No authentication layer; the API is open on `localhost:8081`
+- No authentication layer; the API is open on `localhost:8090`
 - Annotation data does not need to survive browser refresh without the backend (mutations invalidate the query cache)
 - Column order is fixed by the server; only visibility is user-configurable
 - Chart does not share the same filter state as the table (per the integration guide state diagram)
